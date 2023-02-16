@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+:root {
+    --cor-nintendo: '#E60012'
+}
+
 body, ul, li, p {
     margin: 0px;
     padding: 0px;
@@ -14,13 +18,17 @@ body {
 
 header {
 
-    background-color: #1d1e20;
+    background-color: rgba(0, 0, 0, 0.918);
     color: white;
     display: flex;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.logo {
+    width: 10%;
 }
 
 a {
@@ -33,16 +41,15 @@ a {
 
 
 .search-box  {
-    background-color: rgb(0, 0, 0);
     border-radius: 50px;
-    width: 250px;
-    height: 40px;
+    /*width: 250px;
+    height: 40px;*/
     padding: 5px;
     margin-right: 15vw;
-    display: flex;
+    /*display: flex;
     justify-content: flex-end;
     align-items: center;
-    position: relative;
+    position: relative;*/
     top: 30px;
 }
 
@@ -53,6 +60,8 @@ a {
     padding: 10px;
     border-radius: 90px;
     border: 1px solid #d6d6d6;
+    display: flex;
+    justify-content: center;
 }
 
 .search-text {
@@ -60,8 +69,8 @@ a {
     background: none;
     border: none;
     outline: none;
-    width: 200px;
-    height: 38px;
+    width: 0px;
+    height: 0px;
     border-radius: 28px;
     font-size: 16px;
     padding: 0px;
@@ -69,4 +78,14 @@ a {
 
 input::placeholder {
     color: white;
+}
+
+.search-box:hover {
+    background-color: ;
+    width: 250px;
+    height: 40px;
+    *display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
 }
