@@ -94,18 +94,34 @@ input::placeholder {
 
 main {
     margin: auto;
-    width: 70vw;
+    width: 90vw;
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(4, 400px) ;
+    grid-template-columns: 250px 250px 250px 250px 180px;
     grid-auto-rows: 300px;
-    gap: 0.8vw;
-    row-gap: 1.5vw;
+    gap: 10px;
+    row-gap: 30px;
+    margin: 0 auto;
+    align-items: left;
+    justify-content: left;
 }
 
 .container > img {
-    width: 300px;
-    height: 300px;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+aside > img {
+    max-width: 180px;
+}
+
+.lateral {
+    grid-column: 5;
+    grid-row: 1;
+}
+
+main {
+    background-color: red;
 }
