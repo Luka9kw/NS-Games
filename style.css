@@ -97,7 +97,7 @@ main {
     width: 90vw;
 }
 
-.container {
+/* .container {
     display: grid;
     grid-template-columns: 250px 250px 250px 250px 180px;
     grid-auto-rows: 300px;
@@ -106,12 +106,12 @@ main {
     margin: 0 auto;
     align-items: left;
     justify-content: left;
-}
+} */
 
-.container > img {
+/* .container > img {
     max-width: 250px;
     max-height: 250px;
-}
+} */
 
 aside > img {
     max-width: 180px;
@@ -124,4 +124,27 @@ aside > img {
 
 main {
     background-color: red;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.lista {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.lista > img {
+    width: 250px;
+}
+
+.menu {
+    width: 40%;
 }
