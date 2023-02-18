@@ -17,13 +17,12 @@ body, ul, li, p {
 header {
     background-color: rgba(0, 0, 0, 0.918);
     color: white;
-    display: flex;
     justify-content: space-around;
-    padding: 1vh;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    display: grid;
+    padding: 3vh;
+    display: flex;
+    grid-template-columns: 250px 500px 600px;
+    gap: 30px;
+    align-items: left;
 }
 
 .logo {
@@ -43,19 +42,21 @@ a {
 }
 
 .menu > a {
-    background-color: red;
+    font-family: var(--fonte-principal);
+    font-variant: small-caps;
+    font-weight: normal;
+    font-size: 1.2em;
     color: white;
     margin: 8px;
     padding: 8px;
     border-radius: 3px;
-
-
 }
 
 
 .search-box  {
     display: flex;
-    align-items: center;
+    align-items: right;
+    justify-content: end;
     border-radius: 28px;
     height: 50px;
     transition-duration: 1s;
