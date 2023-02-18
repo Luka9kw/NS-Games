@@ -55,7 +55,7 @@ a {
 
 .search-box  {
     display: flex;
-    align-items: right;
+    align-items: center;
     justify-content: end;
     border-radius: 28px;
     height: 50px;
@@ -90,6 +90,7 @@ a {
 input::placeholder {
     color: black;
     font-variant: small-caps;
+
 }
 
 .search-box:hover > .search-text {
