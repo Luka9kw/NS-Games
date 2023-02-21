@@ -60,6 +60,7 @@ a {
     justify-content: center;
     border-radius: 28px;
     height: 50px;
+    transition: 0.5s;
 }
 
 .search-button>img {
