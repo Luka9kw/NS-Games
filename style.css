@@ -26,6 +26,8 @@ header {
 
 .logo {
     height: 50px;
+    position: relative;
+    left: 8vw;
 }
 
 a {
@@ -38,6 +40,8 @@ a {
     align-items: center;
     flex-direction: row;
     align-items: center;
+    position: relative;
+    left: 10vw;
 }
 
 .menu>a {
@@ -54,7 +58,7 @@ a {
 
 .search-box {
     position: fixed;
-    right: 20vw;
+    right: 15vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,9 +117,22 @@ input::placeholder {
     box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.116);
 }
 
+aside.titulo-conteudo > p {
+    font-size: 1em;
+    font-variant: small-caps;
+    background-color: rgba(255, 0, 0, 0.918);
+    color: white;
+    margin: 1vh 10vw 1vh 10vw;
+    padding: 2px 0px 0px 10px;
+    border-radius: 3px;
+
+}
+
 main {
     margin: auto;
-    width: 90vw;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
 }
 
 .container {
@@ -129,19 +146,7 @@ main {
 }
 
 .container>img {
-    max-width: 250px;
-    max-height: 250px;
-}
-
-aside>img {
-    max-width: 180px;
-}
-
-.lateral {
-    grid-column: 5;
-    grid-row: 1;
-}
-
-main {
-    background-color: red;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 2px;
 }
