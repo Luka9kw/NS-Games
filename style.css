@@ -36,6 +36,9 @@ header {
     width: 100vw;
     position: fixed;
 }
+header a:hover{
+    color: rgb(255, 0, 0);
+}
 
 .logo {
     height: 60px;
@@ -113,18 +116,20 @@ input::placeholder {
 
 .corpo-esquerda {
     display: flex;
-    flex: 0.9;
+    flex: 0.8;
     flex-direction: column;
 }
 
 .titulo-exclusivos, .titulo-multi {
-    font-size: 1em;
+    font-size: 1.05em;
+    font-family: var(--fonte-principal);
     font-variant: small-caps;
+    font-weight: bolder;
     background-color: red;
     width: 50.4vw;
     color: white;
     margin: 2vh 0vw 1vh 0vw;
-    padding: 5px;
+    padding: 2px;
     text-indent: 8px;
     border-radius: 3px;
 
@@ -146,8 +151,8 @@ input::placeholder {
 }
 
 .container>img {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 280px;
+    max-height: 280px;
     border-radius: 2px;
 }
 
@@ -161,10 +166,13 @@ input::placeholder {
 .menu-lateral {
     color: white;
     background-color: #E60012;
-    flex: 0.2;
-    display: flex;
+    /* width: 15vw; */
     margin-top: 2vh;
+    margin: 2vh 0vw 0vh 0vw;
+    border-radius: 6px;
     flex-direction: column;
+    text-align: center;
+    flex: 0.15;
 }
 
 footer {
@@ -176,6 +184,12 @@ footer {
     text-align: center;
 }
 
-.notas-metacritic {
-    
+.notas-metacritic img {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #F7ECA2; */
+    border-radius: 10px;
+    padding: 10px;
+    /* border: white solid 3px; */
 }
