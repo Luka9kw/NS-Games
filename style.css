@@ -36,7 +36,8 @@ header {
     width: 100vw;
     position: fixed;
 }
-header a:hover{
+
+header a:hover {
     color: rgb(255, 0, 0);
 }
 
@@ -111,7 +112,8 @@ a {
 
 input::placeholder {
     color: black;
-    font-variant: small-caps;
+    font-weight: 500;
+    font-size: 0.9em;
 }
 
 .corpo-esquerda {
@@ -120,7 +122,8 @@ input::placeholder {
     flex-direction: column;
 }
 
-.titulo-exclusivos, .titulo-multi {
+.titulo-exclusivos,
+.titulo-multi {
     font-size: 1.05em;
     font-family: var(--fonte-principal);
     font-variant: small-caps;
@@ -154,13 +157,14 @@ input::placeholder {
     max-width: 280px;
     max-height: 280px;
     border-radius: 2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.055);
 }
 
 .conteudo {
     display: flex;
     width: 80vw;
     margin: auto;
-    padding-top: 12.3vh ;
+    padding-top: 12.3vh;
 }
 
 .menu-lateral {
@@ -173,6 +177,7 @@ input::placeholder {
     flex-direction: column;
     text-align: center;
     flex: 0.15;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.288);
 }
 
 footer {
@@ -184,12 +189,18 @@ footer {
     text-align: center;
 }
 
-.notas-metacritic img {
-    width: 70%;
+.notas-metacritic {
+    width: 65%;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
     /* background-color: #F7ECA2; */
-    border-radius: 10px;
-    padding: 10px;
     /* border: white solid 3px; */
+}
+
+.mustplay-images>img {
+    width: 90%;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
+    margin: 6px;
 }
