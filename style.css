@@ -35,6 +35,7 @@ header {
     padding-left: 10vw;
     width: 100vw;
     position: fixed;
+    z-index: 1;
 }
 
 header a:hover {
@@ -122,6 +123,15 @@ input::placeholder {
     flex-direction: column;
 }
 
+.corpo-esquerda img:hover  {
+    scale: 1.03;
+    transition: 0.4s;
+    filter: saturate(115%) contrast(105%);
+}
+.corpo-esquerda img  {
+    transition: 0.3s;
+}
+
 .titulo-exclusivos,
 .titulo-multi {
     font-size: 1.05em;
@@ -131,7 +141,7 @@ input::placeholder {
     background-color: red;
     width: 50.4vw;
     color: white;
-    margin: 2vh 0vw 1vh 0vw;
+    margin: 2vh 0vw 2vh 0vw;
     padding: 2px;
     text-indent: 8px;
     border-radius: 3px;
@@ -166,6 +176,8 @@ input::placeholder {
     margin: auto;
     padding-top: 12.3vh;
 }
+
+
 
 .menu-lateral {
     color: white;
@@ -203,4 +215,16 @@ footer {
     border-radius: 3px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
     margin: 6px;
+    transition: 0.2s;
+}
+
+.mustplay-images> img:hover  {
+    scale: 1.05;
+    transition: 0.3s;
+    filter: saturate(130%) contrast(105%);
+    z-index: 1;
+}
+
+#metacritic-logo {
+    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.26));
 }
