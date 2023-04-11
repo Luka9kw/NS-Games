@@ -191,6 +191,7 @@ input::placeholder {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.288);
 }
 
+
 footer {
     background-color: red;
     color: white;
@@ -227,4 +228,17 @@ footer {
 
 #metacritic-logo {
     filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.26));
+}
+
+@media(max-width: 1000px) {
+    .conteudo {
+        width: 90vw;
+    }
+
+    .corpo-esquerda {
+        width: 20vw;
+    }
+   .menu-lateral {
+    flex: 0.3;
+   }
 }
